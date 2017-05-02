@@ -4,7 +4,7 @@
 #
 Name     : gnome-bluetooth
 Version  : 3.20.1
-Release  : 1
+Release  : 2
 URL      : https://download.gnome.org/sources/gnome-bluetooth/3.20/gnome-bluetooth-3.20.1.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-bluetooth/3.20/gnome-bluetooth-3.20.1.tar.xz
 Summary  : Widgets for Bluetooth device selection
