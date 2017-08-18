@@ -4,15 +4,15 @@
 #
 Name     : gnome-bluetooth
 Version  : 3.20.1
-Release  : 2
+Release  : 3
 URL      : https://download.gnome.org/sources/gnome-bluetooth/3.20/gnome-bluetooth-3.20.1.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-bluetooth/3.20/gnome-bluetooth-3.20.1.tar.xz
 Summary  : Widgets for Bluetooth device selection
 Group    : Development/Tools
 License  : GPL-2.0 LGPL-2.1
 Requires: gnome-bluetooth-bin
-Requires: gnome-bluetooth-lib
 Requires: gnome-bluetooth-data
+Requires: gnome-bluetooth-lib
 Requires: gnome-bluetooth-doc
 Requires: gnome-bluetooth-locales
 BuildRequires : desktop-file-utils
@@ -27,10 +27,13 @@ BuildRequires : libxslt-bin
 BuildRequires : perl(XML::Parser)
 BuildRequires : pkgconfig(gdk-3.0)
 BuildRequires : pkgconfig(gio-2.0)
+BuildRequires : pkgconfig(gio-unix-2.0)
+BuildRequires : pkgconfig(gmodule-2.0)
 BuildRequires : pkgconfig(gtk+-3.0)
 BuildRequires : pkgconfig(libcanberra-gtk3)
 BuildRequires : pkgconfig(libnotify)
 BuildRequires : pkgconfig(libudev)
+BuildRequires : pkgconfig(libxml-2.0)
 
 %description
 GNOME Bluetooth
@@ -96,8 +99,11 @@ locales components for the gnome-bluetooth package.
 %setup -q -n gnome-bluetooth-3.20.1
 
 %build
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1492047005
+export SOURCE_DATE_EPOCH=1503073062
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
@@ -105,11 +111,11 @@ make V=1  %{?_smp_mflags}
 export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
-export no_proxy=localhost
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1492047005
+export SOURCE_DATE_EPOCH=1503073062
 rm -rf %{buildroot}
 %make_install
 %find_lang gnome-bluetooth2
