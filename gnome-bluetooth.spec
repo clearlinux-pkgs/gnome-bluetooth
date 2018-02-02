@@ -4,7 +4,7 @@
 #
 Name     : gnome-bluetooth
 Version  : 3.26.1
-Release  : 5
+Release  : 6
 URL      : https://download.gnome.org/sources/gnome-bluetooth/3.26/gnome-bluetooth-3.26.1.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-bluetooth/3.26/gnome-bluetooth-3.26.1.tar.xz
 Summary  : No detailed summary available
