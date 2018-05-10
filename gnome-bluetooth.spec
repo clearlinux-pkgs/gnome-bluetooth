@@ -4,7 +4,7 @@
 #
 Name     : gnome-bluetooth
 Version  : 3.28.0
-Release  : 8
+Release  : 9
 URL      : https://download.gnome.org/sources/gnome-bluetooth/3.28/gnome-bluetooth-3.28.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-bluetooth/3.28/gnome-bluetooth-3.28.0.tar.xz
 Summary  : No detailed summary available
