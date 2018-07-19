@@ -1,0 +1,3 @@
+3.28.1
+pkgconfig(libcanberra-gtk3)
+pkgconfig(libnotify)
