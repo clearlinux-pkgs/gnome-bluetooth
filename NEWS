@@ -1,3 +1,47 @@
+ver 42.0:
+This version contains updated translations.
+
+ver 42.rc:
+This version of gnome-bluetooth fixes a problem that could lead to gnome-shell's
+Bluetooth menu not appearing when it should have. This version also makes the
+Connect switch available for Bluetooth LE MIDI devices.
+
+ver 42.beta.2:
+This version of gnome-bluetooth contains a number of bug fixes related to
+the GTK4 port, including spinners not spinning, device removal confirmation
+dialog not appearing, pairing dialog not disappearing, and a work-around
+to a UPower reference leak that could lead to a crash in the main libraries,
+as well as fixes for basic functionality in bluetooth-sendto.
+
+ver 42.beta:
+This version of gnome-bluetooth adds a number of APIs to eventually be used
+in Settings and gnome-shell:
+ - Export battery information for Bluetooth devices which support it
+ - Check whether any input devices are connected, so as to be able to show
+   a confirmation dialogue when switching off Bluetooth
+ - Check whether a device can be connected to
+
+ver 42.alpha.2:
+This version of gnome-bluetooth splits the libraries into UI and non-UI
+versions. The UI library is only exposed as a native library for the benefit
+of gnome-control-center, and the non-UI library is only exposed as an
+introspected library for the benefit of gnome-shell.
+
+ver 42.alpha:
+This version of gnome-bluetooth contains major API changes, but it is
+parallel-installable with the GTK 3-based, 3.34.x versions of the
+library.
+
+- Port library to GTK4
+- Remove chooser widgets from library
+- Remove chooser UI from bluetooth-sendto
+- Make bluetooth-sendto optional
+- Replace canberra-gtk dependency with gsound
+- GtkTreeModel-based API was replaced by a GListModel-based API
+- Loads of bug fixes, many new tests
+- Make changes to the way the default adapter is selected, see README.md
+  for details
+
 ver 3.34.5:
 - Fix unwanted soname change
 - Note that an unreleased version of python-dbusmock is required

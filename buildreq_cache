@@ -1,0 +1,6 @@
+42.0
+gsound-dev
+pkgconfig(gsound)
+pkgconfig(libadwaita-1)
+pkgconfig(upower-glib)
+upower-dev
