@@ -4,7 +4,7 @@
 #
 Name     : gnome-bluetooth
 Version  : 42.4
-Release  : 29
+Release  : 30
 URL      : https://download.gnome.org/sources/gnome-bluetooth/42/gnome-bluetooth-42.4.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-bluetooth/42/gnome-bluetooth-42.4.tar.xz
 Summary  : No detailed summary available
