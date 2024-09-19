@@ -1,3 +1,22 @@
+ver 47.0:
+This versions contains translation updates, a crash fix when cancelling pairing,
+pairing support for the Kawai CA501 music keyboard, and a fix for a device
+properties accessibility regression.
+
+ver 47.rc:
+This version makes the pairing dialogue adaptive, as well as updating
+translations.
+
+ver 47.beta:
+This version contains translation updates and build fixes. It also ports
+some widgets to use libadwaita's spinner instead of GTK's, simplifying
+the code.
+
+ver 47.alpha:
+This version fixes the devices list when empty, improves the dialogue when
+removing a device, and ports a number of widgets to their modern libadwaita
+equivalents.
+
 ver 46.0:
 This version contains translation updates.
 
